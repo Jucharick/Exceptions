@@ -35,6 +35,7 @@ public class Lec_01 {
 
   }
 
+  // # FileNotFoundException Файл не найден
   public static long getFileLength (String path) {
     File file = new File(path);
     if (!file.exists()) {
