@@ -13,10 +13,40 @@
 
 // бросить исключение - используется ключевое слово throw («бросить»)
 
+import java.io.File;
+
 public class Lec_01 {
   public static void main(String[] args) {
-    
 
+    // ArithmeticException  -  / by zero
+    int a = 0;
+    int b = 10;
 
+    int c=b/a;
+    System.out.println(c);
+
+    // NullPointerException
+    String str = null;
+    //System.out.println(str.length());
+
+    // ArrayIndexOutOfBoundsException
+    int[] array = new int[10];
+    // array[100] = 5;
+
+  }
+
+  public static long getFileLength (String path) {
+    File file = new File(path);
+    if (!file.exists()) {
+      return -1;
+    }
+    return file.length();
+  }
+
+  public static int div(int a, int b) {
+    if (b == 0) {
+      return -1;
+    }
+    return a / b;
   }
 }
