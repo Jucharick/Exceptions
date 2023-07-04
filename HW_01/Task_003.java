@@ -22,7 +22,6 @@ public class Task_003 {
       System.out.println("Result:");
       System.out.println(Arrays.toString(result));
     }
-  
   }
 
   public static int[] createArray() {
