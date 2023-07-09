@@ -10,22 +10,19 @@ public class Task_004 {
     inputString();
   }
 
-  public static void inputString() throws Exception{
+  public static void inputString() throws Exception {
     System.out.println("Введите строку (пустые строки вводить нельзя)");
     Scanner scanner = new Scanner(System.in);
     String input;
 
-    while (true) {
-      input = scanner.nextLine();
-      if (input.isEmpty() || input == null) {
-        throw new Exception("Пустые строки вводить нельзя");
-      }
-      else {
-        System.out.println("Введенная строка: " + input);
-        break;
-      }
+    input = scanner.nextLine();
+    if (input.isEmpty() || input == null) {
+      throw new Exception("Пустые строки вводить нельзя");
+    } else {
+      System.out.println("Введенная строка: " + input);
     }
-    
     scanner.close();
   } 
 }
+    
+
