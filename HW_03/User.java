@@ -4,25 +4,9 @@ public class User {
   private String name;
   private String surname;
   private String middleName;
-  private int numberPhone;
+  private String numberPhone;
 
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public void setSurname(String surname) {
-    this.surname = surname;
-  }
-
-  public void setMiddleName(String middleName) {
-    this.middleName = middleName;
-  }
-
-  public void setNumberPhone(int numberPhone) {
-    this.numberPhone = numberPhone;
-  }
-
-  public User (String surname, String name, String middleName, int numberPhone) {
+  public User (String surname, String name, String middleName, String numberPhone) {
     this.surname = surname;
     this.name = name;
     this.middleName = middleName;
@@ -41,7 +25,11 @@ public class User {
     return middleName;
   }
 
-  public int getNumberPhone() {
+  public String getNumberPhone() {
     return numberPhone;
   }
+
+  public String toString() {
+    return surname + " " + name + " " + middleName + " " + numberPhone;
+}
 }
